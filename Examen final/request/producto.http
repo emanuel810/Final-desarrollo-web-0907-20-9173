@@ -1,0 +1,27 @@
+@url =http://localhost:4000/protected
+
+GET {{url}}
+###
+
+
+###
+POST {{url}}
+Content-Type: application/json
+
+{
+    "Codigo": 1,
+    "Nombre": "1",
+    "Precio": 1,
+    "Existencia": "1"
+}
+
+###
+PUT {{url}}/3
+Content-Type: application/json
+
+{
+    "Codigo": 1,
+    "Nombre": "1",
+    "Precio": 1,
+    "Existencia": "1"
+}
